@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
@@ -26,9 +26,9 @@ class Control extends Component{
     render(){
         return(
             <div>
-                <button>+</button>
-                <button>-</button>
-                <button>Randomize Color</button>
+                <button onClick={this.props.onPlus}>+</button>
+                <button onClick={this.props.onSubtract}>-</button>
+                <button onClick={this.props.onRandomizeColor}>Randomize Color</button>
             </div>
         );
     }

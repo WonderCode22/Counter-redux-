@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Control from './Control';
+import Value from './Value';
 
 const propTypes = {
 
@@ -17,7 +19,10 @@ class Counter extends Component{
 
     render(){
         return(
-            <div>MyComponent</div>
+            <div>
+                <Value/>
+                <Control/>
+            </div>
         );
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 const propTypes = {
@@ -18,7 +18,7 @@ class Value extends Component{
 
     render(){
         return(
-            <div>Value</div>
+            <div>{this.props.number}</div>
         );
     }
 }
